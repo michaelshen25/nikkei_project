@@ -4,16 +4,12 @@ This project implements a complete end-to-end pipeline for forecasting the next-
 
 **Access**
 
-* **API**: Send a `POST` request to:
+* **API**: Send a `POST` request with a JSON body:
 
   ```
-  https://nikkei-api-609056186247.us-central1.run.app/predict
-  ```
-
-  with a JSON body of the form:
-
-  ```json
-  {"history": [h1, h2, ..., h10]}
+ curl -X POST https://nikkei-api-609056186247.us-central1.run.app/predict \
+  -H "Content-Type: application/json" \
+  -d '{"history":[h1, h2, ..., h10]}'
   ```
 
   and receive a response:
