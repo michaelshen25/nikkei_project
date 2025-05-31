@@ -37,7 +37,7 @@ I build and deploy a recurrent neural network (LSTM) to forecast the next-day cl
     Content-Type: application/json
 
     { "history": [day₁, day₂, …, day₁₀] }
-    → { "predicted_close": 20087.85 }
+    → { "predicted_close": [value] }
 
 - **Shiny Web App:**  
 - Hosted at https://michaelshen25.shinyapps.io/nikkei-forecast/  
